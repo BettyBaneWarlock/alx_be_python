@@ -12,7 +12,7 @@ def convert_to_celsius(fahrenheit):
 # Convert Celsius to Fahrenheit
 def convert_to_fahrenheit(celsius):
     try:
-        fahrenheit = (celsius+32)*CELSIUS_TO_FAHRENHEIT_FACTOR
+        fahrenheit = CELSIUS_TO_FAHRENHEIT_FACTOR*celsius+32
         return fahrenheit
     except TypeError:
         raise ValueError("Invalid temperature. Please enter a numeric value.")
