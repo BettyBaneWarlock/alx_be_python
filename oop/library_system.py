@@ -30,7 +30,7 @@ class PrintBook(Book):
 # Composition - Library class
 class Library:
     def __init__(self):
-        self.books=[]  # List to store Book, EBook, and PrintBook instances
+        self.books = []  # List to store Book, EBook, and PrintBook instances
     
     def add_book(self, book):
         self.books.append(book)
